@@ -7,10 +7,16 @@ from dash.dependencies import Input, Output
 import pandas as pd
 # Imports from this application
 from app import app
-df = pd.read_csv(r'Dataframes\batData1.csv')
-df1 = pd.read_csv(r'Dataframes\batData2.csv')
-df2 = pd.read_csv(r'Dataframes\batval.csv')
-df3 = pd.read_csv(r'Dataframes\battest.csv')
+
+url = 'https://raw.githubusercontent.com/alfaroqueIslam/cricket-match-results/master/Dataframes/batData1.csv'
+url1 = 'https://raw.githubusercontent.com/alfaroqueIslam/cricket-match-results/master/Dataframes/batData2.csv'
+url2 = 'https://raw.githubusercontent.com/alfaroqueIslam/cricket-match-results/master/Dataframes/batval.csv'
+url3 = 'https://raw.githubusercontent.com/alfaroqueIslam/cricket-match-results/master/Dataframes/battest.csv'
+
+df = pd.read_csv(url)
+df1 = pd.read_csv(url1)
+df2 = pd.read_csv(url2)
+df3 = pd.read_csv(url3)
 df = df.sort_values(by=['Country'])
 df1 = df1.sort_values(by=['Country'])
 df2 = df2.sort_values(by=['Country'])
