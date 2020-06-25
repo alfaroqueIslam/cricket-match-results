@@ -134,14 +134,14 @@ def predict_and_plot(year,country,home_away,batting_order):
         arlist = df2['Country'].unique()
         
         dft = df2
-        if batting_order == 'Home':
+        if home_away == 'Home':
             
             dft = dft[dft['Home/Away'] == 'Home']
             dft = dft[dft['Country'] == country]
             
             
            
-        elif batting_order == 'Away':
+        elif home_away == 'Away':
             
             dft = dft[dft['Home/Away'] == 'Away']
             dft = dft[dft['Country'] == country]
@@ -174,14 +174,14 @@ def predict_and_plot(year,country,home_away,batting_order):
         
         arlist = df3['Country'].unique()
         dft = df3
-        if batting_order == 'Home':
+        if home_away == 'Home':
             
             dft = dft[dft['Home/Away'] == 'Home']
             dft = dft[dft['Country'] == country]
             
             
            
-        elif batting_order == 'Away':
+        elif home_away == 'Away':
             
             dft = dft[dft['Home/Away'] == 'Away']
             dft = dft[dft['Country'] == country]
