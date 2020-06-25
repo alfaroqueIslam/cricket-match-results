@@ -171,8 +171,21 @@ def predict_and_plot(year,country,home_away,batting_order):
         except ZeroDivisionError:
             nywp = 0
     else:
+        
         arlist = df3['Country'].unique()
         dft = df3
+        if batting_order == 1:
+            
+            dft = dft[dft['Home/Away'] == 'Home']
+            dft = dft[dft['Country'] == country]
+            
+            
+           
+        elif batting_order == 2:
+            
+            dft = dft[dft['Home/Away'] == 'Away']
+            dft = dft[dft['Country'] == country]
+
         if batting_order == 1:
             
             dft = dft[dft['Innings_Number'] == 1]
