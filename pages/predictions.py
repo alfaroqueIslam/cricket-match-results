@@ -7,8 +7,8 @@ from dash.dependencies import Input, Output
 import pandas as pd
 # Imports from this application
 from app import app
-df = pd.read_csv(r'Dataframes\appData1.csv')
-df1 = pd.read_csv(r'Dataframes\appData2.csv')
+df = pd.read_csv(r'Dataframes\batData1.csv')
+df1 = pd.read_csv(r'Dataframes\batData2.csv')
 df2 = pd.read_csv(r'Dataframes\batval.csv')
 df3 = pd.read_csv(r'Dataframes\battest.csv')
 df = df.sort_values(by=['Country'])
