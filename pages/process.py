@@ -46,7 +46,7 @@ column1 = dbc.Col(
             """
         
             Decision tree and Random forests had the best scores and were significantly above the baseline but they 
-            were very close to eachother. I decided to get the Permutation Importances to see if Isolating to more important features 
+            were very close to each other. I decided to get the Permutation Importances to see if Isolating to more important features 
             might help me obtain a better score.
 
 
