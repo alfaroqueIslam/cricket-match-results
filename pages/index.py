@@ -17,7 +17,7 @@ column1 = dbc.Col(
             """
         
             ## T20I Cricket Winrates
-            This application predicts the win rates of International Cricket teams in T20 Cricket.
+            This application predicts the win rates of International Cricket teams in T20 Cricket and matches in with the Actual.
             """
         ),
         dcc.Link(dbc.Button('Predictions', color='primary'), href='/predictions')
@@ -31,7 +31,8 @@ fig = px.scatter(gapminder.query("year==2007"), x="gdpPercap", y="lifeExp", size
 
 column2 = dbc.Col(
     [
-        
+        html.Img(src='https://miro.medium.com/max/1000/1*pBBwH936X-elTgE-7b2sfw.jpeg', 
+				 className='img-fluid'),
     ]
 )
 
