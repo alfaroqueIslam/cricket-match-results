@@ -31,7 +31,7 @@ column1 = dbc.Col(
             """
         
             ## Predictions
-            Predicting the win rate
+            Predicting the T20I win rate for International Cricket teams compared to the Actual.
             """
         ),
         html.Div([
