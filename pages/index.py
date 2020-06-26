@@ -16,7 +16,7 @@ column1 = dbc.Col(
         dcc.Markdown(
             """
         
-            ## T20I Cricket Winrates
+            ## T20I Cricket Win rates
             This application predicts the win rates of International Cricket teams in T20 Cricket and matches it with the Actual win rates.
             """
         ),
