@@ -20,7 +20,7 @@ column1 = dbc.Col(
 
             """
         ),
-        html.Img(src='assets/permutation.PNG', width="50%", height="50%", 
+        html.Img(src='assets/permutation.PNG', width="10%", height="10%", 
 				 className='img-fluid')
 
     ],
