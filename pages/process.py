@@ -17,17 +17,17 @@ column1 = dbc.Col(
         
             ## Data
             The data used for this process includes the individual batting statistics for international players per match 
-            and the statistics for team match results. I took the two datasets and merged them together so that 
-            I can use both player stats and team stats to fit into my model. The data was sourced from 
+            and the statistics for team match results in International Twenty Twenty Cricket. I took the two datasets and merged them together 
+            so that I can use both player stats and team stats to fit into my model. The data was sourced from 
             https://data.world/cclayford/cricinfo-statsguru-data.
 
             ## Process
 
             I split the data into a training set, a validation set and a test set. For the training set I used the year 2014-2017,
             for the validation set I used the year 2018 and for the test set I used 2019. My target in this data is the 'Result' column
-            which contains the value 'Won' or 'Lost'. I used my training set to find a baseline.\  
-            Lost    0.548154\  
-            Won     0.451846\  
+            which contains the value 'Won' or 'Lost'. I used my training set to find a baseline.  
+            Lost    0.548154  
+            Won     0.451846   
             
             The Majority class is the value 'Lost' and gives me a baseline accuracy of 0.548154.
 
@@ -87,7 +87,7 @@ column1 = dbc.Col(
             """
         
             Finally with an ROC score of almost 0.84 I concluded that my Random forests model was my most accurate model.
-            I used the the predictions from this model to create my predictions page which shows the actual and predicted
+            I used the predictions from this model to create my predictions page which shows the actual and predicted
             win rate of T20I teams side by side.
 
 

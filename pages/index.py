@@ -17,7 +17,7 @@ column1 = dbc.Col(
             """
         
             ## T20I Cricket Winrates
-            This application predicts the win rates of International Cricket teams in T20 Cricket and matches in with the Actual.
+            This application predicts the win rates of International Cricket teams in T20 Cricket and matches it with the Actual win rates.
             """
         ),
         dcc.Link(dbc.Button('Predictions', color='primary'), href='/predictions')
