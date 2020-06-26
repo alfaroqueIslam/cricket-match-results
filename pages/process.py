@@ -25,9 +25,9 @@ column1 = dbc.Col(
 
             I split the data into a training set, a validation set and a test set. For the training set I used the year 2014-2017,
             for the validation set I used the year 2018 and for the test set I used 2019. My target in this data is the 'Result' column
-            which contains the value 'Won' or 'Lost'. I used my training set to find a baseline.
-            Lost    0.548154
-            Won     0.451846
+            which contains the value 'Won' or 'Lost'. I used my training set to find a baseline.  
+            Lost    0.548154  
+            Won     0.451846  
             
             The Majority class is the value 'Lost' and gives me a baseline accuracy of 0.548154.
 
@@ -83,6 +83,16 @@ column1 = dbc.Col(
 				 className='img-fluid'),
         html.Img(src='https://raw.githubusercontent.com/alfaroqueIslam/cricket-match-results/master/assets/rocCurve.PNG', width="40%", height="40%", 
 				 className='img-fluid'),
+        dcc.Markdown(
+            """
+        
+            Finally with an ROC score of almost 0.84 I concluded that my Random forests model was my most accurate model.
+            I used the the predictions from this model to create my predictions page which shows the actual and predicted
+            win rate of T20I teams side by side.
+
+
+            """
+        ),
 
     ],
 )
