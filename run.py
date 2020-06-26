@@ -36,8 +36,8 @@ footer = dbc.Container(
             html.P(
                 [
                     html.Span('Alfaroque Islam', className='mr-2'), 
-                    html.A(html.I(className='fas fa-envelope-square mr-1'), href='mailto:<you>@<provider>.com'), 
-                    html.A(html.I(className='fab fa-github-square mr-1'), href='https://github.com/<you>/<repo>'), 
+                    html.A(html.I(className='fas fa-envelope-square mr-1'), href='mailto:alfaroque5@gmail.com'), 
+                    html.A(html.I(className='fab fa-github-square mr-1'), href='https://github.com/alfaroqueIslam/cricket-match-results'), 
                     html.A(html.I(className='fab fa-linkedin mr-1'), href='https://www.linkedin.com/in/<you>/'), 
                     html.A(html.I(className='fab fa-twitter-square mr-1'), href='https://twitter.com/<you>'), 
                 ], 
@@ -68,8 +68,6 @@ def display_page(pathname):
         return index.layout
     elif pathname == '/predictions':
         return predictions.layout
-    elif pathname == '/insights':
-        return insights.layout
     elif pathname == '/process':
         return process.layout
     else:

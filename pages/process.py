@@ -25,9 +25,9 @@ column1 = dbc.Col(
 
             I split the data into a training set, a validation set and a test set. For the training set I used the year 2014-2017,
             for the validation set I used the year 2018 and for the test set I used 2019. My target in this data is the 'Result' column
-            which contains the value 'Won' or 'Lost'. I used my training set to find a baseline.  
-            Lost    0.548154  
-            Won     0.451846  
+            which contains the value 'Won' or 'Lost'. I used my training set to find a baseline.\  
+            Lost    0.548154\  
+            Won     0.451846\  
             
             The Majority class is the value 'Lost' and gives me a baseline accuracy of 0.548154.
 
