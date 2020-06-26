@@ -5,6 +5,7 @@ import dash_core_components as dcc
 import dash_html_components as html
 from dash.dependencies import Input, Output
 import pandas as pd
+import plotly.graph_objs as go
 # Imports from this application
 from app import app
 
@@ -210,12 +211,18 @@ def predict_and_plot(year,country,home_away,batting_order):
             nywp = 0
         nyl = dft[dft['Country'] == country].iloc[0]['Lost']
         nylp = dft[dft['Country'] == country].iloc[0]['Pred_Lost']
+    layout = go.Layout(
+    title = 'Team Win Rate',
+    xaxis = go.XAxis(
+        title = year,
+        showticklabels=False)
+    )
     bar_plot = {
         'data': [
                 {'x': [1], 'y': [nyw], 'type': 'bar', 'name': 'Actual'},
                 {'x': [1], 'y': [nywp], 'type': 'bar', 'name': u'Predicted'}]
         ,
-        'layout': {'title': 'Team Win Rate'}
+        'layout': layout
                         
     }
     return bar_plot
